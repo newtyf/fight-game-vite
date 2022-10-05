@@ -33,9 +33,6 @@ const keys = {
   },
 };
 
-//timer
-decreaseTimer({ player, enemy });
-
 // scenes - sprites
 const background = new Sprite({
   position: {
@@ -151,6 +148,8 @@ function animate() {
   }
 }
 animate();
+//timer
+decreaseTimer({ player, enemy });
 
 // listeners
 window.addEventListener("keydown", (event) => {
