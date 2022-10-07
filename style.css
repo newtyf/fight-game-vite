@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Press Start 2P", cursive;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -27,7 +27,7 @@
 }
 
 #app .status-bar {
-  width: 1024px;
+  width: 960px;
   height: 70px;
   position: absolute;
   display: flex;
@@ -37,22 +37,37 @@
 }
 /** timer */
 .status-bar .timer {
-  background-color: gray;
-  width: 80px;
-  height: 100%;
+  background-color: black;
+  width: 120px;
+  height: 80%;
   display: grid;
   place-items: center;
+  padding-top: 5px;
+  border: 4px solid white;
 }
 
 .timer p {
   font-size: 30px;
-  font-family: monospace;
 }
 
 /** health */
 .status-bar .health {
-  border: 2px solid yellow;
+  border: 4px solid white;
+  font-size: 10px;
 }
+
+/** names*/
+.status-bar .health .name-player {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+}
+.status-bar .health .name-enemy {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
 /** health player */
 .status-bar .health-player {
   background-color: red;
@@ -62,9 +77,9 @@
   justify-content: right;
 }
 .health-player .status {
-  height: 100%;
+  height: 105%;
   width: 100%;
-  background-color: green;
+  background-color: #818cf8;
 }
 /** health enemy */
 .status-bar .health-enemy {
@@ -75,9 +90,9 @@
   justify-content: left;
 }
 .health-enemy .status {
-  height: 100%;
+  height: 105%;
   width: 100%;
-  background-color: green;
+  background-color: #818cf8;
 }
 
 #app .display-text {
